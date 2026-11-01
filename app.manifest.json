@@ -1,0 +1,5175 @@
+{
+  "name": "Rapider Digital Credential & Certificate Issuance",
+  "key": "digital-credential-and-certificate-issuance",
+  "domainKey": "EDU",
+  "appSuite": {
+    "key": "EDU",
+    "title": "Rapider Education Suite"
+  },
+  "type": "App",
+  "description": "1.2 Target Personas & Progressive Disclosure - SME Fast-Path Defaults (Customer Academies, Bootcamps, Professional Associations): Pick an LrnCredential, choose a branded certificate + badge artwork template, auto-issue signed Open Badges 3.0 assertions whenever learners complete an LrnCourse or 164 exam, and let graduates share 1-click verifiable badges to LinkedIn. - Enterprise Progressive Disclosure (University Registrars, National Licensing Boards, Global Enterprises): Unlock multi-department",
+  "isPublic": true,
+  "tags": [
+    "edu",
+    "digital-credential-and-certificate-issuance",
+    "top-200"
+  ],
+  "iconUrl": "fas fa-school",
+  "icon": "fas fa-school",
+  "route": "digital-credential-and-certificate-issuance",
+  "rating": 5,
+  "reviewCount": 0,
+  "status": "app-metadata-completed",
+  "coverPage": "<!-- Rapider Official App SOW & Specification | App #167: Digital Credential & Certificate Issuance (digital-credential-and-certificate-issuance) | Domain: EDU -->\n\n# #167 Digital Credential & Certificate Issuance (`digital-credential-and-certificate-issuance`) — Scope of Work (SOW)\n\n- **App Number & Name:** `#167` — Digital Credential & Certificate Issuance\n- **Proposed App Key:** `digital-credential-and-certificate-issuance`\n- **Suite / Domain Key & Model Prefix:** `EDU` (`Edu*`)\n- **Representative Product (`P1`):** Accredible\n- **Combined Feature Catalog:** [../combined-features/167-digital-credential-and-certificate-issuance-features.md](../combined-features/167-digital-credential-and-certificate-issuance-features.md)\n- **Target Release Posture:** Open Badges 3.0 & W3C Verifiable Credential Issuer Studio, Lifelong Learner Wallet, Stackable Pathways, CEU Recertification & Public Verification Microapplication\n\n---\n\n## 1. Executive Outcome & Target Audience\n\n### 1.1 Business Problem Solved\nStatic emailed PDF certificates are trivially forged in image editors, impossible to revoke when professional licenses lapse, invisible to labor-market skill searches, and disconnected from institutional alumni growth. While Rapider's `LRN` suite defines internal `LrnCredential` completions, universities, professional licensing boards, customer academies, and training providers need cryptographic external portability. **Rapider Digital Credential & Certificate Issuance (`digital-credential-and-certificate-issuance`)** extends canonical `LrnCredential` records with a dual PDF/SVG visual studio, automatic 1EdTech **Open Badges 3.0** and **W3C Verifiable Credentials (`did:web`)** cryptographic signing, stackable micro-credential pathways, CEU recertification workflows, an external-importable lifelong learner wallet, and an instant public verification portal.\n\n### 1.2 Target Personas & Progressive Disclosure\n- **SME Fast-Path Defaults (Customer Academies, Bootcamps, Professional Associations):** Pick an `LrnCredential`, choose a branded certificate + badge artwork template, auto-issue signed Open Badges 3.0 assertions whenever learners complete an `LrnCourse` or `#164` exam, and let graduates share 1-click verifiable badges to LinkedIn.\n- **Enterprise Progressive Disclosure (University Registrars, National Licensing Boards, Global Enterprises):** Unlock multi-department `did:web` issuer authorities, dual-control Registrar/Dean batch sign-off via Home `WorkItem`s, 1EdTech Comprehensive Learner Record (CLR v2.0) bundles, ACE credit portability (`Decimal128`), W3C `StatusList2021` revocation bitmaps, `<rapider-kanban>` CEU recertification audits, external third-party Open Badges 3.0 wallet ingestion synced to `HrEmployee` compliance, and *Spotlight* certified directories.\n\n### 1.3 Measurable Business Outcomes\n- **100% Tamper-Evident Verification in `< 200ms`:** Every credential carries a `did:web` Ed25519/ECDSA cryptographic proof and live `StatusList2021` revocation check—eliminating manual registrar phone/fax degree verifications.\n- **2.5x Higher Organic Program Referral Reach:** 1-click LinkedIn profile embeds and branded verification landing pages turn every shared graduate badge into an attributed `MktCampaign` enrollment channel.\n- **Automated License & CEU Compliance:** 90/30-day expiry triggers and structured CEU evidence audits keep certified practitioners and `HrEmployee` staff continuously compliant.\n\n### 1.4 Benchmark Summary (`P1`–`P6`)\nSynthesizes the dual visual studio, automatic Open Badges 3.0 / W3C VC conversion, ACE extensions, and LinkedIn referral analytics of **`P1` Accredible**, the skill taxonomy mapping, stackable pathways, and CEU renewals of **`P2` Credly**, the registrar diploma governance and CLR v2.0 portability of **`P3` Parchment / Canvas Credentials**, the high-velocity QR templates of **`P4` Certifier**, the `did:web` and `StatusList2021` cryptography of **`P5` Microsoft Entra Verified ID**, and the unified learner-to-`HrEmployee` wallet of **`P6` Workday**.\n\n---\n\n## 2. In-Scope, Out-of-Scope & Suite Ownership Boundaries\n\n### 2.1 In-Scope Capabilities\n1. Verified issuing authority profiles (`EduCredentialIssuer`) with `did:web` Decentralized Identifier metadata, co-signers, and signing key bindings.\n2. Visual print/PDF diploma + SVG/PNG badge templates (`EduCredentialArtwork`) extending canonical `LrnCredential` definitions with dynamic merge tokens and QR verification codes.\n3. Event-driven single and cohort batch issuance (`EduIssuanceBatch`), cryptographically signed Open Badges 3.0 / W3C VC assertions (`EduVerifiableAssertion`), and `StatusList2021` revocation/name-change superseding.\n4. Stackable micro-credential pathways (`EduCredentialPathway`) and `<rapider-kanban>` CEU recertification/renewal reviews (`EduRenewalSubmission`).\n5. Lifelong learner credential wallet supporting privacy toggles (`PUBLIC`, `UNLISTED_LINK_ONLY`, `PRIVATE`), lifelong personal email binding, and third-party Ope",
+  "scopeOfWork": "<!-- Rapider Official App SOW & Specification | App #167: Digital Credential & Certificate Issuance (digital-credential-and-certificate-issuance) | Domain: EDU -->\n\n# #167 Digital Credential & Certificate Issuance (`digital-credential-and-certificate-issuance`) — Scope of Work (SOW)\n\n- **App Number & Name:** `#167` — Digital Credential & Certificate Issuance\n- **Proposed App Key:** `digital-credential-and-certificate-issuance`\n- **Suite / Domain Key & Model Prefix:** `EDU` (`Edu*`)\n- **Representative Product (`P1`):** Accredible\n- **Combined Feature Catalog:** [../combined-features/167-digital-credential-and-certificate-issuance-features.md](../combined-features/167-digital-credential-and-certificate-issuance-features.md)\n- **Target Release Posture:** Open Badges 3.0 & W3C Verifiable Credential Issuer Studio, Lifelong Learner Wallet, Stackable Pathways, CEU Recertification & Public Verification Microapplication\n\n---\n\n## 1. Executive Outcome & Target Audience\n\n### 1.1 Business Problem Solved\nStatic emailed PDF certificates are trivially forged in image editors, impossible to revoke when professional licenses lapse, invisible to labor-market skill searches, and disconnected from institutional alumni growth. While Rapider's `LRN` suite defines internal `LrnCredential` completions, universities, professional licensing boards, customer academies, and training providers need cryptographic external portability. **Rapider Digital Credential & Certificate Issuance (`digital-credential-and-certificate-issuance`)** extends canonical `LrnCredential` records with a dual PDF/SVG visual studio, automatic 1EdTech **Open Badges 3.0** and **W3C Verifiable Credentials (`did:web`)** cryptographic signing, stackable micro-credential pathways, CEU recertification workflows, an external-importable lifelong learner wallet, and an instant public verification portal.\n\n### 1.2 Target Personas & Progressive Disclosure\n- **SME Fast-Path Defaults (Customer Academies, Bootcamps, Professional Associations):** Pick an `LrnCredential`, choose a branded certificate + badge artwork template, auto-issue signed Open Badges 3.0 assertions whenever learners complete an `LrnCourse` or `#164` exam, and let graduates share 1-click verifiable badges to LinkedIn.\n- **Enterprise Progressive Disclosure (University Registrars, National Licensing Boards, Global Enterprises):** Unlock multi-department `did:web` issuer authorities, dual-control Registrar/Dean batch sign-off via Home `WorkItem`s, 1EdTech Comprehensive Learner Record (CLR v2.0) bundles, ACE credit portability (`Decimal128`), W3C `StatusList2021` revocation bitmaps, `<rapider-kanban>` CEU recertification audits, external third-party Open Badges 3.0 wallet ingestion synced to `HrEmployee` compliance, and *Spotlight* certified directories.\n\n### 1.3 Measurable Business Outcomes\n- **100% Tamper-Evident Verification in `< 200ms`:** Every credential carries a `did:web` Ed25519/ECDSA cryptographic proof and live `StatusList2021` revocation check—eliminating manual registrar phone/fax degree verifications.\n- **2.5x Higher Organic Program Referral Reach:** 1-click LinkedIn profile embeds and branded verification landing pages turn every shared graduate badge into an attributed `MktCampaign` enrollment channel.\n- **Automated License & CEU Compliance:** 90/30-day expiry triggers and structured CEU evidence audits keep certified practitioners and `HrEmployee` staff continuously compliant.\n\n### 1.4 Benchmark Summary (`P1`–`P6`)\nSynthesizes the dual visual studio, automatic Open Badges 3.0 / W3C VC conversion, ACE extensions, and LinkedIn referral analytics of **`P1` Accredible**, the skill taxonomy mapping, stackable pathways, and CEU renewals of **`P2` Credly**, the registrar diploma governance and CLR v2.0 portability of **`P3` Parchment / Canvas Credentials**, the high-velocity QR templates of **`P4` Certifier**, the `did:web` and `StatusList2021` cryptography of **`P5` Microsoft Entra Verified ID**, and the unified learner-to-`HrEmployee` wallet of **`P6` Workday**.\n\n---\n\n## 2. In-Scope, Out-of-Scope & Suite Ownership Boundaries\n\n### 2.1 In-Scope Capabilities\n1. Verified issuing authority profiles (`EduCredentialIssuer`) with `did:web` Decentralized Identifier metadata, co-signers, and signing key bindings.\n2. Visual print/PDF diploma + SVG/PNG badge templates (`EduCredentialArtwork`) extending canonical `LrnCredential` definitions with dynamic merge tokens and QR verification codes.\n3. Event-driven single and cohort batch issuance (`EduIssuanceBatch`), cryptographically signed Open Badges 3.0 / W3C VC assertions (`EduVerifiableAssertion`), and `StatusList2021` revocation/name-change superseding.\n4. Stackable micro-credential pathways (`EduCredentialPathway`) and `<rapider-kanban>` CEU recertification/renewal reviews (`EduRenewalSubmission`).\n5. Lifelong learner credential wallet supporting privacy toggles (`PUBLIC`, `UNLISTED_LINK_ONLY`, `PRIVATE`), lifelong personal email binding, and third-party Open Badges 3.0 import.\n6. Zero-trust public verification portal (`EduVerificationLog`), opt-in *Spotlight* certified directory, and social referral attribution analytics.\n\n### 2.2 Out-of-Scope Capabilities (Delegated to Adjacent Rapider Apps)\n- **Internal LMS course modules, SCORM playback, and base `LrnCredential` / `LrnSkillDefinition` catalog definitions:** Owned by `LRN` (`online-learning`, `learning-experience-skills`) — **extended via `lrnCredentialId`, never duplicated**.\n- **Academic course gradebooks, GPA calculation, and degree-audit credit rules:** Owned by `#161 Student Information System (SIS)`.\n- **Proctored licensing exam delivery and psychometric item analysis:** Owned by `#164 Online Examination & Assessment`.\n- **Payment gateway processing and invoice accounting for duplicate print orders:** Owned by `FIN` (`billing`, `payments`).\n\n### 2.3 Cross-Suite Ownership & Integration Contract\n\n| Domain / App | Owns (Canonical Models) | Integration Contract with `digital-credential-and-certificate-issuance` |\n| :--- | :--- | :--- |\n| **`digital-credential-and-certificate-issuance` (`#167` — This App)** | `EduCredentialIssuer`, `EduCredentialArtwork`, `EduIssuanceBatch`, `EduVerifiableAssertion`, `EduCredentialPathway`, `EduRenewalSubmission`, `EduVerificationLog` | Signs, delivers, wallets, renews, revokes, and publicly verifies Open Badges 3.0 / W3C VC credentials and diplomas. |\n| **`LRN` Suite (`learning-experience-skills`, `online-learning`)** | `LrnCredential`, `LrnSkillDefinition`, `LrnCourse`, `LrnEnrollment` | `#167` binds `EduCredentialArtwork` to `LrnCredential.id`, embeds `LrnSkillDefinition` URIs inside OB 3.0 JSON-LD, and consumes `lrn.credential.earned.v1`. |\n| **`#161 Student Information System` (`EDU`)** | `EduStudentProfile`, `EduTranscriptRecord`, `EduAcademicProgram` | Consumes `edu.student.graduated.v1` to stage degree/diploma assertions; respects `ferpaDirectoryOptOut` on the *Spotlight* public directory. |\n| **`#164 Online Examination` (`EDU`)** | `EduExamSession`, `EduExamAttempt` | Consumes `edu.exam.certificationPassed.v1` to mint time-bounded professional certification assertions. |\n| **`HR` Suite (`employees`)** | `HrEmployee` | Syncs earned, renewed, and verified imported external credentials onto `HrEmployee` talent/compliance records. |\n| **`MKT` & `FIN` Suites (`email`, `social`, `campaigns`, `billing`)** | `MktEmailMessage`, `MktSocialPost`, `MktCampaign`, `FinInvoice` | `MKT` delivers claim emails and tracks verification-page referral conversions; `FIN` invoices paid duplicate diploma/apostille requests (`Decimal128`). |\n| **Rapider Platform Services** | Identity/RBAC, KMS/Secrets, Files/Drive, Home `WorkItem`, `projectChannelMessage` | Signs VCs via platform KMS keys (zero hardcoded keys!), stores PDF/SVG renders in Drive, and routes batch sign-offs, revocations & CEU audits via Home `WorkItem`s. |\n\n---\n\n## 3. Primary Web Pages & Sidebar Navigation Architecture (13 Pages)\n\nEvery visible sidebar section strictly enforces the **Minimum 3 Items Rule (`>= 3` items with `displayOnMenu: true`)**: `Issuance & Studio` (3 items), `Pathways & Wallet` (3 items), and `Verification & Governance` (3 items) = 9 visible items + 4 hidden detail/drawer routes (`displayOnMenu: false`).\n\n| # | Route | Page Title | Sidebar Section | Menu Visible | Key Components & UX |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| 1 | `credentials-pulse` | Credential & Impact Pulse | `Issuance & Studio` | `true` (Order 1) | KPI cards (`countSWR`): Total Active Assertions, Claim Rate %, LinkedIn Shares, Public Verifications (30d), Expiring Licenses (90d), Attributed Program Clicks. |\n| 2 | `artwork-templates` | Certificate & Badge Studio | `Issuance & Studio` | `true` (Order 2) | `EduCredentialArtwork` catalog (`findSWR`) linked to `LrnCredential`, `#activeFilterTagsBar` (Issuer, Format, ACE Credits), clickable Template Name -> `artwork-template-detail`, icon+text Edit, icon-only Delete. |\n| 3 | `issuance-batches` | Issuance Batches & Ledger | `Issuance & Studio` | `true` (Order 3) | `EduIssuanceBatch` & `EduVerifiableAssertion` explorer with `#activeFilterTagsBar` (Status, Source `#161`/`#164`/`LRN`, Bounce Flag), clickable Assertion Serial -> `assertion-verify-detail`. |\n| 4 | `stackable-pathways` | Stackable Pathways & CLR | `Pathways & Wallet` | `true` (Order 1) | Configure `EduCredentialPathway` prerequisite milestone rules and 1EdTech CLR v2.0 achievement bundle definitions. |\n| 5 | `ceu-renewals` | CEU & Recertification Board | `Pathways & Wallet` | `true` (Order 2) | `<rapider-kanban>` board of `EduRenewalSubmission` cards (`SUBMITTED` -> `UNDER_AUDIT` -> `NEEDS_EVIDENCE` -> `RENEWED`) + list toggle, AI CEU Pre-Auditor badge (`CRD-020`). |\n| 6 | `learner-wallet` | Lifelong Credential Wallet | `Pathways & Wallet` | `true` (Order 3) | Earner view of owned & imported external OB 3.0 / W3C VC credentials with PDF/SVG/JSON-LD download, visibility selector, 1-click LinkedIn add, and Import External VC action. |\n| 7 | `public-verifier` | Public Verification & Spotlight | `Verification & Governance` | `true` (Order 1) | Live 5-step cryptographic inspector (URL/Serial/JSON-LD dropzone) + opt-in *Spotlight* Certified Directory respecting `ferpaDirectoryOptOut`. |\n| 8 | `issuer-authorities` | Issuer Profiles & `did:web` | `Verification & Governance` | `true` (Order 2) | Manage `EduCredentialIssuer` authorities, `did:web` status, co-signer titles, `<rapider-phone-input>` registrar verification desk contacts, and `StatusList2021` health. |\n| 9 | `verification-analytics` | Verification & Viral ROI | `Verification & Governance` | `true` (Order 3) | `EduVerificationLog` audit ledger, employer lookup geographies, `MktCampaign` referral funnel metrics, and anomaly alerts (`CRD-022`). |\n| 10 | `assertion-verify-detail` | Assertion & Cryptographic Proof | *(Hidden)* | `false` | Detailed `EduVerifiableAssertion` view (`#/assertion-verify-detail?id=...`) showing rendered diploma/badge, W3C VC JSON-LD proof, `LrnSkillDefinition` pills, Revoke / Re-issue Name Change controls, and `Back to list`. |\n| 11 | `artwork-template-detail` | Studio Template & Merge Preview | *(Hidden)* | `false` | Detailed `EduCredentialArtwork` preview (`#/artwork-template-detail?id=...`) with PDF + SVG badge tabs, QR placement, AI Skill Mapper (`CRD-019`), and issued count. |\n| 12 | `batch-issue-drawer` | Stage Cohort / Single Issuance | *(Hidden)* | `false` | Sliding drawer to stage `EduIssuanceBatch` or single assertion, run pre-flight validation, submit Registrar `WorkItem` sign-off, `finally` button reset, and `closePageDrawer()`. |\n| 13 | `issuer-renewal-drawer` | Issuer / CEU Renewal Drawer | *(Hidden)* | `false` | Sliding drawer to configure `EduCredentialIssuer` (`<rapider-phone-input>`) or submit/audit `EduRenewalSubmission` (`Decimal128` CEUs) with `closePageDrawer()`. |\n\n**Mandatory Rapider UI Standards Enforced Across All 13 Pages:**\n- **SWR & Soft-Delete Hygiene:** Initial loads exclusively call `window.rapiderApi.findSWR` / `countSWR` with zero manual `isDeleted` filter clauses and filter `item.isDeleted !== true` in memory.\n- **Table Actions & Navigation:** Zero standalone \"View\" buttons in `Actions`; primary identifiers navigate to `#/assertion-verify-detail?id=...` or `#/artwork-template-detail?id=...`; Edit uses icon + text; Delete uses icon-only with `title=\"Delete\"` and `aria-label=\"Delete\"`.\n- **Contrast & Dialog Ban:** Primary and danger buttons enforce `#ffffff !important` white text; native `alert`/`confirm`/`prompt` are strictly banned.\n\n---\n\n## 4. Canonical Data Models (`Edu*` — 7 Models)\n\nAll models use platform-generated UUID `id` (`00000000-xxxx-xxxx-xxxx-xxxxxxxxxxxx` in sample seeds), omit `projectId`, enforce optimistic `version`, never store private cryptographic keys in database rows (referencing platform KMS key aliases only), and use `Decimal128` for ACE credits, CEU hours, and fulfillment fees.\n\n| Model Name | Key Fields & Types | Relationships & External Refs | Invariants & Lifecycle |\n| :--- | :--- | :--- | :--- |\n| **`EduCredentialIssuer`** | `id` (UUID), `name` (string), `didWebIdentifier` (string, e.g., `did:web:credentials.example.edu:registrar`), `kmsSigningKeyAlias` (string), `signatoryName` (string), `signatoryTitle` (string), `verificationDeskPhoneE164` (string), `supportEmail` (string), `statusListUri` (string), `status` (`ACTIVE`, `SUSPENDED`), `version` (int) | `departmentId` -> `HrDepartment.id` (optional) | Private signing keys reside strictly in platform KMS (`kmsSigningKeyAlias`); public key JWK remains permanently resolvable so historical assertions stay verifiable even if rotated. |\n| **`EduCredentialArtwork`** | `id` (UUID), `name` (string), `credentialCategory` (`MICRO_BADGE`, `COURSE_CERTIFICATE`, `PROFESSIONAL_LICENSE`, `ACADEMIC_DIPLOMA`, `CLR_BUNDLE`), `pdfLayoutJson` (JSON), `svgBadgeTemplate` (string), `aceRecommendedCredits` (`Decimal128`), `validityMonths` (int, nullable for lifetime), `requiredRenewalCeus` (`Decimal128`), `requiresDualControlSignOff` (boolean), `duplicatePrintFeeAmount` (`Decimal128`), `currency` (string), `status` (`DRAFT`, `PUBLISHED`, `RETIRED`), `version` (int) | `lrnCredentialId` -> `LrnCredential.id`, `issuerId` -> `EduCredentialIssuer.id`, `skillIds` -> `LrnSkillDefinition.id[]` | Extends canonical `LrnCredential` 1-to-1 per issuer branding; `ACADEMIC_DIPLOMA` and `PROFESSIONAL_LICENSE` enforce `requiresDualControlSignOff = true`. |\n| **`EduIssuanceBatch`** | `id` (UUID), `batchCode` (string), `sourceTrigger` (`SIS_GRADUATION`, `EXAM_PASSED`, `LRN_COURSE`, `MANUAL_COHORT`), `candidateCount` (int), `bouncedEmailCount` (int), `status` (`DRAFT`, `PREFLIGHT_VALIDATED`, `PENDING_REGISTRAR_SIGN_OFF`, `SIGNING_IN_PROGRESS`, `ISSUED`), `issuedAt` (Date), `version` (int) | `artworkId` -> `EduCredentialArtwork.id`, `issuerId` -> `EduCredentialIssuer.id`, `approvedByEmployeeId` -> `HrEmployee.id` | Batches with `requiresDualControlSignOff = true` cannot transition to `SIGNING_IN_PROGRESS` without an approved Home `WorkItem` from a distinct user than the batch creator. |\n| **`EduVerifiableAssertion`** | `id` (UUID), `publicSerialCode` (string, unique), `isExternalImported` (boolean), `externalIssuerDid` (string), `recipientFullName` (string), `recipientInstitutionalEmail` (string), `recipientPersonalEmail` (string), `issuedAt` (Date), `expiresAt` (Date), `w3cVcJsonLd` (JSON, signed OB 3.0 / W3C VC proof), `pdfDriveFileId` (string), `bakedBadgeDriveFileId` (string), `statusListIndex` (int), `assertionStatus` (`ACTIVE_VALID`, `EXPIRING_SOON`, `EXPIRED`, `REVOKED`, `SUPERSEDED_NAME_CHANGE`), `revocationReasonCode` (string), `walletVisibility` (`PUBLIC`, `UNLISTED_LINK_ONLY`, `PRIVATE`), `claimedAt` (Date), `version` (int) | `batchId` -> `EduIssuanceBatch.id` (optional), `artworkId` -> `EduCredentialArtwork.id`, `lrnCredentialId` -> `LrnCredential.id`, `studentId` -> `EduStudentProfile.id` (optional), `hrEmployeeId` -> `HrEmployee.id` (optional), `supersededByAssertionId` -> `EduVerifiableAssertion.id` (optional) | Signed `w3cVcJsonLd` payload is strictly immutable after issuance; revoking flips the `StatusList2021` bit at `statusListIndex` and sets `assertionStatus = REVOKED`; legal name changes issue a new assertion pointing back via `supersededByAssertionId`. |\n| **`EduCredentialPathway`** | `id` (UUID), `name` (string), `description` (string), `requiredArtworkIds` (UUID[]), `electiveArtworkIds` (UUID[]), `minElectiveCount` (int), `capstoneArtworkId` (UUID), `autoIssueCapstone` (boolean), `status` (`ACTIVE`, `ARCHIVED`), `version` (int) | `capstoneLrnCredentialId` -> `LrnCredential.id` | Graph must be a Directed Acyclic Graph (DAG) — circular pathway dependencies are deterministically rejected on save. |\n| **`EduRenewalSubmission`** | `id` (UUID), `claimedCeuCredits` (`Decimal128`), `verifiedCeuCredits` (`Decimal128`), `evidenceDriveFileIds` (string[]), `activitySummary` (string), `stage` (`SUBMITTED`, `UNDER_AUDIT`, `NEEDS_EVIDENCE`, `RENEWED`, `DECLINED`), `auditedAt` (Date), `version` (int) | `assertionId` -> `EduVerifiableAssertion.id`, `auditorEmployeeId` -> `HrEmployee.id`, `renewalFeeInvoiceId` -> `FinInvoice.id` (optional) | Transitioning to `RENEWED` requires `verifiedCeuCredits >= artwork.requiredRenewalCeus` and mints/extends the renewed assertion window cleanly. |\n| **`EduVerificationLog`** | `id` (UUID), `checkedSerialCode` (string), `verificationOutcome` (`VALID`, `EXPIRED`, `REVOKED`, `INVALID_SIGNATURE`, `NOT_FOUND`), `verifierRegionCountry` (string), `referralSource` (`DIRECT_QR`, `LINKEDIN`, `SPOTLIGHT_DIRECTORY`, `JSON_UPLOAD`), `clickedProgramCta` (boolean), `anomalyFlagged` (boolean), `verifiedAt` (Date) | `assertionId` -> `EduVerifiableAssertion.id` (optional), `attributedCampaignId` -> `MktCampaign.id` (optional) | Append-only audit telemetry; stores zero PII about anonymous employer verifiers (country-level geo only for GDPR compliance). |\n\n---\n\n## 5. Core End-to-End User Journeys\n\n### 5.1 Journey 1: SME Academy Fast-Path — Course Completion -> Automatic Open Badges 3.0 & LinkedIn Share\n1. Academy Admin opens `artwork-templates`, links `LrnCredential` *\"Rapider Certified Cloud Builder\"* to a certificate + SVG badge design (`EduCredentialArtwork`, `requiresDualControlSignOff = false`), and publishes it.\n2. When a learner completes the mapped `LrnCourse` (or passes `#164` exam), `#167` consumes `lrn.credential.earned.v1`, signs the Open Badges 3.0 / W3C VC JSON-LD via platform KMS, renders the QR-embedded PDF + baked PNG badge to Files/Drive, and emails the claim link via `MKT`.\n3. Learner opens `learner-wallet`, attaches a permanent personal Gmail address, clicks **Add to LinkedIn Profile**, and shares to social—driving tracked employer verifications and `MktCampaign` program clicks.\n\n### 5.2 Journey 2: University Graduation Cohort -> Dual-Control Registrar `WorkItem` Sign-Off\n1. `#161 SIS` emits `edu.student.graduated.v1` for 320 Bachelor of Science graduates, staging `EduIssuanceBatch` `2026-SPRING-BS` (`requiresDualControlSignOff = true`).\n2. Pre-flight check validates 320 names, honors Latin distinctions, `Decimal128` GPAs, and `ferpaDirectoryOptOut` privacy defaults (auto-setting `walletVisibility = UNLISTED_LINK_ONLY` for FERPA-restricted graduates), then routes a Rapider Home `WorkItem` to the University Registrar.\n3. Registrar approves the `WorkItem`; `credentialBatchSigningAndDeliveryWorkflow` cryptographically signs all 320 `EduVerifiableAssertion`s idempotently.\n\n### 5.3 Journey 3: Stackable Micro-Credential Auto-Capstone Award\n1. An earner already holds *Data Engineering I* and *Streaming Pipelines* badges and earns *Cloud Governance* (the 3rd milestone in `EduCredentialPathway`).\n2. `stackablePathwayEvaluationWorkflow` detects 100% DAG completion and automatically issues the capstone *Master Data Architect* W3C VC without manual admin intervention.\n\n### 5.4 Journey 4: Zero-Trust Employer QR Verification & `StatusList2021` Revocation Check\n1. An employer scans the QR code on a candidate's PDF certificate, opening `public-verifier`.\n2. `#167` verifies the Ed25519 signature against `did:web`, checks `expiresAt`, and inspects bit `statusListIndex` on `StatusList2021` in `< 200ms`—returning a green **Cryptographically Verified & Active** seal (or red **Revoked on [Date]** banner if revoked via Home `WorkItem`).\n\n### 5.5 Journey 5: CEU Recertification Audit (`<rapider-kanban>`) & `HrEmployee` Sync\n1. 60 days before a 2-year safety license expires, the holder uploads 20.00 `Decimal128` CEU hours on `ceu-renewals` (`EduRenewalSubmission`).\n2. Grounded AI CEU Pre-Auditor (`CRD-020`) summarizes the uploaded certificates in `projectChannelMessage`; Auditor verifies `20.00 >= 20.00` required CEUs and drags the card to `RENEWED`, updating the credential and syncing compliance status to `HrEmployee`.\n\n### 5.6 Journey 6: Click-Through Navigation & `#activeFilterTagsBar` State Restoration\n1. Registrar filters `issuance-batches` assertions by `Status: \"ACTIVE_VALID\"` and searches `\"Kowalski\"`, displaying `#activeFilterTagsBar` chips.\n2. Clicking serial **CRD-2026-00941** transitions smoothly to `#/assertion-verify-detail?id=...` without `<base href>` 404 diversion, displays the W3C VC proof, and **Back to list** restores the exact filtered state.\n\n---\n\n## 6. Consolidated Feature Priorities & Work Packages\n\n### `P0` Foundation Work Packages (Must-Have Core Release)\n- **WP-P0-1 — `did:web` Issuers & Certificate/Badge Studio (`CRD-001`, `CRD-002`, `CRD-003`):** Deliver `EduCredentialIssuer` (platform KMS signing), `EduCredentialArtwork` extending `LrnCredential`, and Open Badges 3.0 / W3C VC JSON-LD cryptographic signing.\n- **WP-P0-2 — Event/Batch Issuance, Dual-Control Sign-Off & Revocation (`CRD-005`, `CRD-006`, `CRD-007`):** Build `#161`/`#164`/`LRN` event triggers, `EduIssuanceBatch` pre-flight + Registrar Home `WorkItem` dual-control, `StatusList2021` revocation, and legal name-change superseding.\n- **WP-P0-3 — Stackable Pathways, CEU Kanban, Learner Wallet & Public Verifier (`CRD-010`, `CRD-011`, `CRD-013`, `CRD-016`):** Deliver DAG `EduCredentialPathway` engine, `<rapider-kanban>` `ceu-renewals`, `learner-wallet` privacy controls, and `< 200ms` `public-verifier`.\n\n### `P1` Enterprise Scale Work Packages\n- **WP-P1-1 — CLR v2.0 Bundles, Bounce Recovery, Paid Duplicates & `HR` Sync (`CRD-004`, `CRD-008`, `CRD-009`, `CRD-012`):** Add 1EdTech CLR v2.0 achievement graphs, `MKT` email bounce recovery, `FIN` `FinInvoice` duplicate diploma orders (`Decimal128`), and `HrEmployee` talent/license sync.\n- **WP-P1-2 — External OB 3.0 Import, LinkedIn Embeds, Spotlight Directory & Viral Analytics (`CRD-014`, `CRD-015`, `CRD-017`, `CRD-018`):** Add third-party VC signature verification on wallet import, 1-click LinkedIn/email embeds, FERPA-safe *Spotlight* public directory, and `MktCampaign` attribution analytics.\n\n### `P2` Adjacent & Grounded AI Work Packages\n- **WP-P2-1 — Grounded AI Skill Mapper, CEU Pre-Auditor, Pathway Advisor & Fraud Radar (`CRD-019`, `CRD-020`, `CRD-021`, `CRD-022`):** Deliver `LrnSkillDefinition` syllabus alignment suggestions, `projectChannelMessage` CEU document pre-audits, stackable next-badge recommendations, and `EduVerificationLog` enumeration/forgery detection.\n\n---\n\n## 7. Roles, Permissions & Field-Level Governance\n\n| Role | Permitted Actions | Restricted / Field-Level Boundaries |\n| :--- | :--- | :--- |\n| **Credential Earner / Alumni** | Claim credentials, link lifelong personal email, set `walletVisibility` (`PUBLIC`, `UNLISTED_LINK_ONLY`, `PRIVATE`), download PDF/PNG/JSON-LD, import external OB 3.0 VCs, submit `EduRenewalSubmission` CEUs, and request legal name-change re-issuance. | Cannot edit signed achievement fields, alter `issuedAt`/`expiresAt`, or appear in *Spotlight* if `walletVisibility != PUBLIC` or `#161` `ferpaDirectoryOptOut = true`. |\n| **Anonymous Public Verifier** | Verify any `UNLISTED_LINK_ONLY` or `PUBLIC` credential via direct URL/QR/JSON-LD dropzone and browse opt-in `PUBLIC` *Spotlight* directory entries. | Zero access to `PRIVATE` credentials, `recipientInstitutionalEmail`/`recipientPersonalEmail`, or bulk enumeration APIs. |\n| **Program Coordinator / Designer** | Design `EduCredentialArtwork`, define `EduCredentialPathway` DAGs, stage `EduIssuanceBatch` drafts, and audit `EduRenewalSubmission` CEU queues. | Cannot unilaterally sign `requiresDualControlSignOff = true` degree/license batches or revoke high-stakes diplomas without Registrar `WorkItem` approval. |\n| **Registrar / Chief Credential Officer** | Manage `EduCredentialIssuer` authorities, approve dual-control batch sign-off `WorkItem`s, execute audited `StatusList2021` revocations, and approve legal name-change re-issuances. | Never accesses raw private cryptographic keys (enforced inside KMS); cannot silently mutate an already-signed `w3cVcJsonLd` document. |\n\n---\n\n## 8. Technical APIs, Guarded Commands, Events & `requiredWorkflows`\n\n### 8.1 Guarded Domain Commands\nEvery state-mutating API enforces `idempotencyKey`, `correlationId`, and `expectedVersion`:\n- `edu.credentials.stageAndValidateBatch` — Validates recipient emails, dynamic merge fields, and `#161` FERPA flags; routes dual-control `WorkItem` when `requiresDualControlSignOff = true`.\n- `edu.credentials.signAndIssueAssertions` — Invokes platform KMS (`kmsSigningKeyAlias`) to generate W3C VC / Open Badges 3.0 proofs, allocates `statusListIndex`, renders PDF/SVG assets, and emits claim notifications.\n- `edu.credentials.revokeOrSupersedeAssertion` — Updates `StatusList2021` bitstring and sets `REVOKED` (or mints a replacement assertion on legal name change linked via `supersededByAssertionId`).\n- `edu.credentials.importExternalOpenBadge` — Cryptographically verifies third-party issuer `did:web` / OB 3.0 public key before storing `isExternalImported = true` in the wallet.\n- `edu.credentials.approveCeuRenewal` — Verifies `verifiedCeuCredits >= requiredRenewalCeus` (`Decimal128`), extends/re-issues the assertion, and syncs `HrEmployee`.\n\n### 8.2 Domain Events Published & Consumed (Kafka)\n- **Published:** `edu.credential.assertionIssued.v1`, `edu.credential.assertionClaimed.v1`, `edu.credential.assertionRevoked.v1`, `edu.credential.pathwayCapstoneEarned.v1`, `edu.credential.renewed.v1`.\n- **Consumed:** `lrn.credential.earned.v1` (from `LRN`), `edu.student.graduated.v1` (from `#161 SIS`), `edu.exam.certificationPassed.v1` (from `#164`), `fin.payment.succeeded.v1` (fulfills paid duplicate print/renewal fees).\n\n### 8.3 `requiredWorkflows` (Declared in `app.manifest.json`)\n1. `credentialBatchSigningAndDeliveryWorkflow` — Executes KMS JSON-LD signing, PDF/baked-PNG rendering, `MKT` claim dispatch, and bounce monitoring.\n2. `stackablePathwayEvaluationWorkflow` — Evaluates `EduCredentialPathway` DAG completion on every `edu.credential.assertionIssued.v1` event to auto-issue capstones.\n3. `credentialExpiryAndCeuReminderWorkflow` — Sends 90/60/30-day renewal reminders, transitions overdue licenses to `EXPIRED`, and updates `HrEmployee` compliance flags.\n4. `statusList2021PublicationWorkflow` — Compresses and publishes signed W3C `StatusList2021` revocation bitstrings without leaking holder list sizes or PII.\n\n### 8.4 Grounded Rapider AI Rules\n- AI Skill Mapper (`CRD-019`), CEU Pre-Auditor (`CRD-020`), and Pathway Advisor (`CRD-021`) MUST cite canonical `LrnSkillDefinition`, `LrnCourse`, and uploaded Drive evidence files.\n- AI NEVER signs credentials, approves CEU audits, or revokes licenses autonomously—all issuance, renewal, and revocation commands require deterministic rules or explicit human confirmation.\n\n---\n\n## 9. Security, Privacy, Compliance & Non-Functional Requirements\n\n- **Zero Hardcoded Keys & Cryptographic Standards:** Strictly adheres to 1EdTech Open Badges 3.0, W3C Verifiable Credentials Data Model, `did:web`, and `StatusList2021`. Private keys NEVER touch source code, `.env` exports in client bundles, or MongoDB rows—signing occurs exclusively via platform KMS.\n- **GDPR Right to Privacy, FERPA & Selective Disclosure:** Public verification pages never expose recipient email addresses or student IDs; `ferpaDirectoryOptOut = true` from `#161 SIS` defaults assertions to `UNLISTED_LINK_ONLY` and excludes them from *Spotlight* search; earners can switch any credential to `PRIVATE` at any time.\n- **Exact `Decimal128` Precision:** ACE credit recommendations (e.g., `3.00` credits), CEU hours (`12.50` CEUs), and duplicate-diploma fulfillment fees (e.g., `\\$35.00`) strictly use `Decimal128`.\n- **Accessibility & Responsive UX:** Full WCAG 2.2 AA compliance (accessible HTML/text alternative alongside visual diploma/badge graphics, ARIA labels on icon-only Delete buttons, `#ffffff !important` primary/danger button contrast across light and dark modes) across `390px`, `768px`, and `1440px`.\n\n---\n\n## 10. Deterministic Acceptance Criteria\n\n1. **Sidebar 3-Item Section Rule:** `app.manifest.json` defines 3 visible sidebar sections (`Issuance & Studio`, `Pathways & Wallet`, `Verification & Governance`), each containing 3 visible items (`displayOnMenu: true`), while all 4 detail/drawer pages set `displayOnMenu: false`.\n2. **SWR & Soft-Delete Query Hygiene:** Initial loads across all pages invoke `findSWR` / `countSWR` with zero manual `isDeleted` filter clauses and filter `item.isDeleted !== true` in memory.\n3. **Search, `#activeFilterTagsBar` & Clear All:** Filtering `artwork-templates`, `issuance-batches`, `ceu-renewals`, or `public-verifier` displays HTML-escaped chips in `#activeFilterTagsBar` with `[Clear all]`, restoring the full dataset in one click.\n4. **Table Action Standard:** Zero standalone \"View\" buttons appear in `Actions`; primary identifiers navigate to `#/assertion-verify-detail?id=...` or `#/artwork-template-detail?id=...`; Edit uses icon + text and Delete uses icon-only with `title=\"Delete\"` and `aria-label=\"Delete\"`.\n5. **Custom Elements Adoption:** Issuer verification desk contacts in `issuer-authorities` and `issuer-renewal-drawer` use `<rapider-phone-input>`, and `ceu-renewals` uses `<rapider-kanban>`.\n6. **Optimistic Lifecycle & Drawer Auto-Close:** Saving `batch-issue-drawer` or `issuer-renewal-drawer` resets button state in a `finally` block, invokes `closePageDrawer()`, clears SWR cache, broadcasts events, and refreshes parent views; deletions use `#rapiderConfirmOkBtn` with zero native `alert`/`confirm`/`prompt`.\n7. **Canonical `LRN` Reuse & Dual-Control Gate:** `EduCredentialArtwork` references `LrnCredential.id` without duplicating LMS course tables, and `requiresDualControlSignOff = true` batches block signing until a Rapider Home `WorkItem` is approved by a second authorized officer.\n8. **Immutable W3C VC Proof & `StatusList2021` Revocation:** Direct edits to `EduVerifiableAssertion.w3cVcJsonLd` after issuance are rejected; revoking an assertion flips its `StatusList2021` bit so `public-verifier` immediately reports `REVOKED`, while tampered JSON-LD uploads report `INVALID_SIGNATURE`.\n9. **DAG Stackable Pathway Invariant:** Saving a cyclic `EduCredentialPathway` is rejected; completing all prerequisite badges in an active DAG automatically issues the capstone credential.\n10. **FERPA & Wallet Privacy Enforcement:** Assertions with `walletVisibility = PRIVATE` return `NOT_FOUND` / private notice to unauthenticated verifiers, and `#161` `ferpaDirectoryOptOut = true` learners never appear in *Spotlight* directory queries.\n11. **Click-Through Navigation & Theme Compliance:** Clicking a serial in `issuance-batches` navigates cleanly to `#/assertion-verify-detail?id=...` without `<base href>` 404 diversion, `Back to list` restores filters, all pages pass `validate_theme` in dark/light modes with `#ffffff !important` primary/danger buttons, and zero schemas contain `projectId`.\n",
+  "thumbnailUrl": "",
+  "isolationScope": "FERPA_STUDENT_ISOLATED",
+  "dataModels": [
+    {
+      "name": "EduAcademicProgram",
+      "title": "Academic Program",
+      "description": "Published program requirement versions used by active cohorts cannot be destructively deleted; new catalog years version cleanly.",
+      "domainName": "Rapider Education Suite",
+      "domainKey": "EDU",
+      "datatableName": "EduAcademicProgram",
+      "dataTableName": "EduAcademicProgram",
+      "sqlTableName": "edu_academic_program",
+      "isolationScope": "FERPA_STUDENT_ISOLATED",
+      "titleFieldTemplate": "{{ title }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "title",
+          "code"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Academic Program, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "code",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "level",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "requiredTotalCredits",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "minGraduationGpa",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "requirementGroupsJson",
+          "type": "object",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "department",
+          "type": "belongsTo",
+          "sourceModel": "EduAcademicProgram",
+          "sourceField": "departmentId",
+          "targetModel": "HrDepartment",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "EduAcademicProgram department foreign key link to HrDepartment."
+        }
+      ]
+    },
+    {
+      "name": "EduExamAttempt",
+      "title": "Exam Attempt",
+      "description": "Once `status = SUBMITTED`, `encryptedResponsesJson` and `submissionReceiptHash` (`SHA-256`) are immutable; identity mapping (`studentId` <-> `anonymousCandidateCode`) is masked from graders until embargo lift.",
+      "domainName": "Rapider Education Suite",
+      "domainKey": "EDU",
+      "datatableName": "EduExamAttempt",
+      "dataTableName": "EduExamAttempt",
+      "sqlTableName": "edu_exam_attempt",
+      "isolationScope": "FERPA_STUDENT_ISOLATED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Exam Attempt, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "anonymousCandidateCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "formVariantKey",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "effectiveDurationMinutes",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "startedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "submittedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "extraEmergencyMinutesGranted",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "honorPledgeSignedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "focusLossCount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "encryptedResponsesJson",
+          "type": "object",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "submissionReceiptHash",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "objectiveScore",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "rubricScore",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "totalScaledScore",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "passedCutScore",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "examSession",
+          "type": "belongsTo",
+          "sourceModel": "EduExamAttempt",
+          "sourceField": "examSessionId",
+          "targetModel": "EduExamSession",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "EduExamAttempt examSession foreign key link to EduExamSession."
+        }
+      ]
+    },
+    {
+      "name": "EduExamSession",
+      "title": "Exam Session",
+      "description": "Raw/final scores are strictly hidden from candidates while `status != SCORES_RELEASED`; `blueprintId` pins an immutable snapshot version of `LrnAssessmentBlueprint` at `LIVE` transition.",
+      "domainName": "Rapider Education Suite",
+      "domainKey": "EDU",
+      "datatableName": "EduExamSession",
+      "dataTableName": "EduExamSession",
+      "sqlTableName": "edu_exam_session",
+      "isolationScope": "FERPA_STUDENT_ISOLATED",
+      "titleFieldTemplate": "{{ title }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "title"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Exam Session, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "sessionCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "windowOpenAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "windowCloseAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "baseDurationMinutes",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "lockdownLevel",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "shuffleItems",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "shuffleChoices",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "doubleBlindGrading",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "maxPoints",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "passingCutScorePct",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "examFeeAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "proctorDeskPhoneE164",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "blueprint",
+          "type": "belongsTo",
+          "sourceModel": "EduExamSession",
+          "sourceField": "blueprintId",
+          "targetModel": "LrnAssessmentBlueprint",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "EduExamSession blueprint foreign key link to LrnAssessmentBlueprint."
+        }
+      ]
+    },
+    {
+      "name": "EduStudentProfile",
+      "title": "Student Profile",
+      "description": "`studentNumber` is immutable once issued; `ferpaDirectoryOptOut = true` suppresses public roster/directory export server-side.",
+      "domainName": "Rapider Education Suite",
+      "domainKey": "EDU",
+      "datatableName": "EduStudentProfile",
+      "dataTableName": "EduStudentProfile",
+      "sqlTableName": "edu_student_profile",
+      "isolationScope": "FERPA_STUDENT_ISOLATED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Student Profile, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "studentNumber",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "dateOfBirth",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "gradeLevelOrYear",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "enrollmentStatus",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "ferpaDirectoryOptOut",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "custodyAlertFlag",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "specialProgramCodes",
+          "type": "array",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": true
+        },
+        {
+          "name": "cumulativeUnweightedGpa",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "cumulativeWeightedGpa",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "earnedCredits",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "academicStanding",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "primaryCampusLocation",
+          "type": "belongsTo",
+          "sourceModel": "EduStudentProfile",
+          "sourceField": "primaryCampusLocationId",
+          "targetModel": "HrLocation",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "EduStudentProfile primaryCampusLocation foreign key link to HrLocation."
+        }
+      ]
+    },
+    {
+      "name": "EduTranscriptRecord",
+      "title": "Transcript Record",
+      "description": "Posted `EduTranscriptRecord` entries are strictly append-only (`isImmutablePosted = true`); approved grade changes append an amended record referencing `amendmentParentId`. `EduGradebookEntry` stores individual assignment/standard scores (`Decimal128` `pointsEarned`, `pointsPossible`, `categoryWeight`) linked to `EduSectionEnrollment`.",
+      "domainName": "Rapider Education Suite",
+      "domainKey": "EDU",
+      "datatableName": "EduTranscriptRecord",
+      "dataTableName": "EduTranscriptRecord",
+      "sqlTableName": "edu_transcript_record",
+      "isolationScope": "FERPA_STUDENT_ISOLATED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "summary"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Transcript Record, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "attemptedCredits",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "earnedCredits",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "officialGrade",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "gradePoints",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "qualityPoints",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "postedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "amendmentParentId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isImmutablePosted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "alertSource",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "stage",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "severity",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "summary",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "version",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "student",
+          "type": "belongsTo",
+          "sourceModel": "EduTranscriptRecord",
+          "sourceField": "studentId",
+          "targetModel": "EduStudentProfile",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "EduTranscriptRecord student foreign key link to EduStudentProfile."
+        }
+      ]
+    },
+    {
+      "name": "FinInvoice",
+      "title": "Invoice",
+      "description": "Accounts Payable or Receivable invoice.",
+      "domainName": "Rapider Finance Suite",
+      "domainKey": "FIN",
+      "datatableName": "FinInvoice",
+      "dataTableName": "FinInvoice",
+      "sqlTableName": "fin_invoice",
+      "isolationScope": "ENTERPRISE_SHARED_GOVERNED",
+      "titleFieldTemplate": "{{ partnerName }} - {{ totalAmount }} {{ currency }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "partnerName"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "legalEntityId",
+            "type",
+            "partnerName",
+            "invoiceDate",
+            "totalAmount",
+            "currency"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "status"
+          ],
+          "additionalPrompt": "",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "legalEntityId",
+            "type"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "",
+          "restrictedStates": [
+            {
+              "description": "Cannot modify paid invoices.",
+              "where": {}
+            }
+          ]
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 10,
+          "hiddenFields": [],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [
+            "payments"
+          ],
+          "restrictedStates": [
+            {
+              "description": "Cannot delete approved or paid invoices.",
+              "where": {}
+            }
+          ]
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "legalEntityId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "partnerName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "invoiceDate",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "dueDate",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "totalAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "invoiceNumber",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "accountId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "CrmAccount",
+          "referenceField": "id"
+        },
+        {
+          "name": "billingProfileId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "FinBillingProfile",
+          "referenceField": "id"
+        },
+        {
+          "name": "subscriptionId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "FinSubscription",
+          "referenceField": "id"
+        },
+        {
+          "name": "customerOrderId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "referenceModel": "OpsCustomerOrder",
+          "referenceField": "id"
+        },
+        {
+          "name": "issueDate",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "subtotalAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "taxAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "openAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currencyCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "disputeStatus",
+          "type": "string",
+          "description": "Allowed values: NONE, IN_DISPUTE, RESOLVED) (from accreceivable",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "NONE",
+            "IN_DISPUTE",
+            "RESOLVED) (from accreceivable"
+          ],
+          "options": [
+            "NONE",
+            "IN_DISPUTE",
+            "RESOLVED) (from accreceivable"
+          ]
+        },
+        {
+          "name": "eInvoiceClearanceStatus",
+          "type": "string",
+          "description": "Allowed values: NOT_REQUIRED, PENDING, CLEARED, REJECTED",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "enumValues": [
+            "NOT_REQUIRED",
+            "PENDING",
+            "CLEARED",
+            "REJECTED"
+          ],
+          "options": [
+            "NOT_REQUIRED",
+            "PENDING",
+            "CLEARED",
+            "REJECTED"
+          ]
+        },
+        {
+          "name": "customerName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "createdAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "updatedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "legalEntity",
+          "type": "belongsTo",
+          "sourceModel": "FinInvoice",
+          "sourceField": "legalEntityId",
+          "targetModel": "FinLegalEntity",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "The legal entity this invoice belongs to."
+        },
+        {
+          "name": "payments",
+          "type": "hasMany",
+          "sourceModel": "FinInvoice",
+          "sourceField": "id",
+          "targetModel": "FinPayment",
+          "targetField": "invoiceId",
+          "throughModel": null,
+          "description": "Payments applied to this invoice."
+        },
+        {
+          "name": "account",
+          "type": "belongsTo",
+          "sourceModel": "FinInvoice",
+          "sourceField": "accountId",
+          "targetModel": "CrmAccount",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "FinInvoice account foreign key link to CrmAccount."
+        },
+        {
+          "name": "billingProfile",
+          "type": "belongsTo",
+          "sourceModel": "FinInvoice",
+          "sourceField": "billingProfileId",
+          "targetModel": "FinBillingProfile",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "FinInvoice billingProfile foreign key link to FinBillingProfile."
+        },
+        {
+          "name": "subscription",
+          "type": "belongsTo",
+          "sourceModel": "FinInvoice",
+          "sourceField": "subscriptionId",
+          "targetModel": "FinSubscription",
+          "targetField": "id?",
+          "throughModel": null,
+          "description": "FinInvoice subscription foreign key link to FinSubscription."
+        },
+        {
+          "name": "customerOrder",
+          "type": "belongsTo",
+          "sourceModel": "FinInvoice",
+          "sourceField": "customerOrderId",
+          "targetModel": "OpsCustomerOrder",
+          "targetField": "id?",
+          "throughModel": null,
+          "description": "FinInvoice customerOrder foreign key link to OpsCustomerOrder."
+        }
+      ]
+    },
+    {
+      "name": "HrEmployee",
+      "title": "Employee",
+      "description": "Core profile representing an individual worker within the organization.",
+      "domainName": "Rapider HR & Talent Suite",
+      "domainKey": "HR",
+      "datatableName": "HrEmployee",
+      "dataTableName": "HrEmployee",
+      "sqlTableName": "hr_employee",
+      "isolationScope": "ENTERPRISE_SHARED_WITH_CONFIDENTIAL_VAULTS",
+      "titleFieldTemplate": "{{ firstName }} {{ lastName }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "firstName",
+          "lastName",
+          "email",
+          "jobTitle",
+          "employeeNumber"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "firstName",
+            "lastName",
+            "email",
+            "status"
+          ],
+          "immutableFields": [],
+          "requiredRelations": [],
+          "autoGenerateFields": [],
+          "additionalPrompt": "Ensure the email address is formatted correctly. If a department is mentioned, link the employee to the correct departmentId.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "If status is 'Active', a hireDate must be provided or assumed as today."
+        },
+        "entityItemUpdate": {
+          "immutableFields": [],
+          "autoGenerateFields": [],
+          "additionalPrompt": "When updating manager or department, suggest creating a Lifecycle Event.",
+          "requireUserConfirmation": true,
+          "customValidationPrompt": "Ensure the employee is not set as their own manager.",
+          "restrictedStates": [
+            {
+              "description": "Cannot update terminated employees without authorization.",
+              "where": {}
+            }
+          ]
+        },
+        "entityRead": {
+          "defaultPageSize": 50,
+          "defaultContextLimit": 100,
+          "hiddenFields": [
+            "ssn"
+          ],
+          "maskedFields": [
+            "personalEmail",
+            "phone"
+          ],
+          "additionalPrompt": "Always show job title, department, and status."
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [
+            "lifecycleEvents",
+            "documents",
+            "emergencyContacts"
+          ],
+          "restrictedStates": [
+            {
+              "description": "Active employees must be terminated before deletion.",
+              "where": {}
+            }
+          ]
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "employeeNumber",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "firstName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "lastName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "preferredName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "email",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "personalEmail",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "phone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "jobTitle",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "workerType",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "employmentType",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "hireDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "startDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "endDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "departmentId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "managerId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "positionId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "jobProfileId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "locationId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "legalEntityId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "weeklyHours",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "timeZone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "avatarColor",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "notes",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "department",
+          "type": "belongsTo",
+          "sourceModel": "HrEmployee",
+          "sourceField": "departmentId",
+          "targetModel": "HrDepartment",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "Department this employee belongs to."
+        },
+        {
+          "name": "manager",
+          "type": "belongsTo",
+          "sourceModel": "HrEmployee",
+          "sourceField": "managerId",
+          "targetModel": "HrEmployee",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "Manager this employee reports to."
+        },
+        {
+          "name": "position",
+          "type": "belongsTo",
+          "sourceModel": "HrEmployee",
+          "sourceField": "positionId",
+          "targetModel": "HrPosition",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "Specific position this employee holds."
+        },
+        {
+          "name": "jobProfile",
+          "type": "belongsTo",
+          "sourceModel": "HrEmployee",
+          "sourceField": "jobProfileId",
+          "targetModel": "HrJobProfile",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "Job profile associated with this employee."
+        },
+        {
+          "name": "location",
+          "type": "belongsTo",
+          "sourceModel": "HrEmployee",
+          "sourceField": "locationId",
+          "targetModel": "HrLocation",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "Work location of this employee."
+        },
+        {
+          "name": "legalEntity",
+          "type": "belongsTo",
+          "sourceModel": "HrEmployee",
+          "sourceField": "legalEntityId",
+          "targetModel": "FinLegalEntity",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "Legal entity employing this person."
+        },
+        {
+          "name": "lifecycleEvents",
+          "type": "hasMany",
+          "sourceModel": "HrEmployee",
+          "sourceField": "id",
+          "targetModel": "HrLifecycleEvent",
+          "targetField": "employeeId",
+          "throughModel": null,
+          "description": "Lifecycle events for this employee."
+        },
+        {
+          "name": "changeRequests",
+          "type": "hasMany",
+          "sourceModel": "HrEmployee",
+          "sourceField": "id",
+          "targetModel": "HrChangeRequest",
+          "targetField": "employeeId",
+          "throughModel": null,
+          "description": "Pending and past change requests for this employee."
+        },
+        {
+          "name": "documents",
+          "type": "hasMany",
+          "sourceModel": "HrEmployee",
+          "sourceField": "id",
+          "targetModel": "HrDocumentRef",
+          "targetField": "employeeId",
+          "throughModel": null,
+          "description": "Uploaded compliance and employment documents."
+        },
+        {
+          "name": "emergencyContacts",
+          "type": "hasMany",
+          "sourceModel": "HrEmployee",
+          "sourceField": "id",
+          "targetModel": "HrEmergencyContact",
+          "targetField": "employeeId",
+          "throughModel": null,
+          "description": "Emergency contacts."
+        },
+        {
+          "name": "directReports",
+          "type": "hasMany",
+          "sourceModel": "HrEmployee",
+          "sourceField": "id",
+          "targetModel": "HrEmployee",
+          "targetField": "managerId",
+          "throughModel": null,
+          "description": "Direct reports who report to this manager."
+        }
+      ]
+    },
+    {
+      "name": "LrnCourse",
+      "title": "Course",
+      "description": "Core learning course definition, metadata, syllabus, and delivery configuration.",
+      "domainName": "Rapider Learning Suite",
+      "domainKey": "LRN",
+      "datatableName": "LrnCourse",
+      "dataTableName": "LrnCourse",
+      "sqlTableName": "lrn_course",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ title }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "title",
+          "description",
+          "summary"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Course, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "courseCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "summary",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "audienceRuleRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "ownerUserRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "deliveryModes",
+          "type": "array",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": true
+        },
+        {
+          "name": "language",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "tags",
+          "type": "array",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": true
+        },
+        {
+          "name": "visibility",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currentVersionRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "competencies",
+          "type": "array",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": true
+        },
+        {
+          "name": "learningObjectives",
+          "type": "array",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": true
+        },
+        {
+          "name": "targetAudienceProfile",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "methodology",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "modality",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "navigationMode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "userCanLeave",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "isRequired",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "isRequestable",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "haveExamination",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "haveCertificate",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "defaultParticipantQuota",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "defaultAttendancePercentage",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "defaultMinSuccessGrade",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "versions",
+          "type": "hasMany",
+          "sourceModel": "LrnCourse",
+          "sourceField": "id",
+          "targetModel": "LrnCourseVersion",
+          "targetField": "courseRef",
+          "throughModel": null,
+          "description": "LrnCourse relation to LrnCourseVersion."
+        },
+        {
+          "name": "assignments",
+          "type": "hasMany",
+          "sourceModel": "LrnCourse",
+          "sourceField": "id",
+          "targetModel": "LrnAssignment",
+          "targetField": "courseRef",
+          "throughModel": null,
+          "description": "LrnCourse relation to LrnAssignment."
+        },
+        {
+          "name": "enrollments",
+          "type": "hasMany",
+          "sourceModel": "LrnCourse",
+          "sourceField": "id",
+          "targetModel": "LrnEnrollment",
+          "targetField": "courseRef",
+          "throughModel": null,
+          "description": "LrnCourse relation to LrnEnrollment."
+        },
+        {
+          "name": "credentials",
+          "type": "hasMany",
+          "sourceModel": "LrnCourse",
+          "sourceField": "id",
+          "targetModel": "LrnCredential",
+          "targetField": "courseRef",
+          "throughModel": null,
+          "description": "LrnCourse relation to LrnCredential."
+        }
+      ]
+    },
+    {
+      "name": "LrnCredential",
+      "title": "Learning Credential",
+      "description": "Verifiable certificate, badge, or license issued upon successful course completion.",
+      "domainName": "Rapider Learning Suite",
+      "domainKey": "LRN",
+      "datatableName": "LrnCredential",
+      "dataTableName": "LrnCredential",
+      "sqlTableName": "lrn_credential",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Learning Credential, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "learnerRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "courseRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "enrollmentRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "issuedAt",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "expiresAt",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "verificationCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "templateVersion",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "revokedAt",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "completionDecisionRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "course",
+          "type": "belongsTo",
+          "sourceModel": "LrnCredential",
+          "sourceField": "courseRef",
+          "targetModel": "LrnCourse",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "LrnCredential relation to LrnCourse."
+        }
+      ]
+    },
+    {
+      "name": "LrnEnrollment",
+      "title": "Course Enrollment",
+      "description": "Active learner enrollment linking a learner to a specific course version and progress lifecycle.",
+      "domainName": "Rapider Learning Suite",
+      "domainKey": "LRN",
+      "datatableName": "LrnEnrollment",
+      "dataTableName": "LrnEnrollment",
+      "sqlTableName": "lrn_enrollment",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Course Enrollment, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "learnerRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "courseRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "courseVersionRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "assignmentRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "state",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "startedAt",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "lastActivityAt",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "completedAt",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "finalScore",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "completionEvidenceRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "source",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "adminNotes",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "attendancePercentage",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "evaluationCompleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "cohortRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "completionPolicySnapshot",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "course",
+          "type": "belongsTo",
+          "sourceModel": "LrnEnrollment",
+          "sourceField": "courseRef",
+          "targetModel": "LrnCourse",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "LrnEnrollment relation to LrnCourse."
+        },
+        {
+          "name": "progressList",
+          "type": "hasMany",
+          "sourceModel": "LrnEnrollment",
+          "sourceField": "id",
+          "targetModel": "LrnProgress",
+          "targetField": "enrollmentRef",
+          "throughModel": null,
+          "description": "LrnEnrollment relation to LrnProgress."
+        }
+      ]
+    },
+    {
+      "name": "LrnSkillDefinition",
+      "title": "Skill Definition",
+      "description": "Canonical definition only if Learning owns the taxonomy",
+      "domainName": "Rapider Learning Suite",
+      "domainKey": "LRN",
+      "datatableName": "LrnSkillDefinition",
+      "dataTableName": "LrnSkillDefinition",
+      "sqlTableName": "lrn_skill_definition",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ code }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "code",
+          "description"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Skill Definition, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "taxonomyRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "code",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "category",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "parentRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "synonyms",
+          "type": "array",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": true
+        },
+        {
+          "name": "localeLabels",
+          "type": "object",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "version",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "proficiencyScaleRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "canonicalExternalRef",
+          "type": "object",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "recordVersion",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "taxonomy",
+          "type": "belongsTo",
+          "sourceModel": "LrnSkillDefinition",
+          "sourceField": "taxonomyRef",
+          "targetModel": "LrnSkillTaxonomy",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "LrnSkillDefinition relation to LrnSkillTaxonomy."
+        },
+        {
+          "name": "parent",
+          "type": "belongsTo",
+          "sourceModel": "LrnSkillDefinition",
+          "sourceField": "parentRef",
+          "targetModel": "LrnSkillDefinition",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "LrnSkillDefinition relation to LrnSkillDefinition."
+        },
+        {
+          "name": "proficiencyScale",
+          "type": "belongsTo",
+          "sourceModel": "LrnSkillDefinition",
+          "sourceField": "proficiencyScaleRef",
+          "targetModel": "LrnProficiencyScale",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "LrnSkillDefinition relation to LrnProficiencyScale."
+        }
+      ]
+    },
+    {
+      "name": "MktCampaign",
+      "title": "Marketing Campaign",
+      "description": "Central marketing campaign record for cross-channel planning, budgeting, and performance tracking.",
+      "domainName": "Rapider Marketing Suite",
+      "domainKey": "MKT",
+      "datatableName": "MktCampaign",
+      "dataTableName": "MktCampaign",
+      "sqlTableName": "mkt_campaign",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name",
+          "code",
+          "description"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Marketing Campaign, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "code",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "objective",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "ownerUserId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "startAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "endAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "timezone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "budgetAmount",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "brandId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "parentCampaignId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "goalDefinition",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "attributionModelId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "tags",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "startDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "endDate",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "budget",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "assetLinks",
+          "type": "hasMany",
+          "sourceModel": "MktCampaign",
+          "sourceField": "id",
+          "targetModel": "MktCampaignAssetLink",
+          "targetField": "campaignId",
+          "throughModel": null,
+          "description": "MktCampaign relation to MktCampaignAssetLink."
+        },
+        {
+          "name": "audiences",
+          "type": "hasMany",
+          "sourceModel": "MktCampaign",
+          "sourceField": "id",
+          "targetModel": "MktAudienceSnapshot",
+          "targetField": "campaignId",
+          "throughModel": null,
+          "description": "MktCampaign relation to MktAudienceSnapshot."
+        },
+        {
+          "name": "journeys",
+          "type": "hasMany",
+          "sourceModel": "MktCampaign",
+          "sourceField": "id",
+          "targetModel": "MktMarketingJourney",
+          "targetField": "campaignId",
+          "throughModel": null,
+          "description": "MktCampaign relation to MktMarketingJourney."
+        }
+      ]
+    },
+    {
+      "name": "MktEmailMessage",
+      "title": "Email Message",
+      "description": "Email composition specification, sender metadata, subject, templates, and delivery settings.",
+      "domainName": "Rapider Marketing Suite",
+      "domainKey": "MKT",
+      "datatableName": "MktEmailMessage",
+      "dataTableName": "MktEmailMessage",
+      "sqlTableName": "mkt_email_message",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Email Message, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "purpose",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "fromName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "fromAddress",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "replyTo",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "subject",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "preheader",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "htmlAssetVersionId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "textContentRef",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "audienceId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "suppressionIds",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "campaignId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "scheduledAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "timezone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "providerConnectionId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "trackingPolicy",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "sends",
+          "type": "hasMany",
+          "sourceModel": "MktEmailMessage",
+          "sourceField": "id",
+          "targetModel": "MktEmailSend",
+          "targetField": "emailMessageId",
+          "throughModel": null,
+          "description": "MktEmailMessage relation to MktEmailSend."
+        },
+        {
+          "name": "variants",
+          "type": "hasMany",
+          "sourceModel": "MktEmailMessage",
+          "sourceField": "id",
+          "targetModel": "MktEmailVariant",
+          "targetField": "emailMessageId",
+          "throughModel": null,
+          "description": "MktEmailMessage relation to MktEmailVariant."
+        }
+      ]
+    },
+    {
+      "name": "MktSocialPost",
+      "title": "Social Media Post",
+      "description": "Post text, media attachments, schedule, and live engagement metrics per social channel.",
+      "domainName": "Rapider Marketing Suite",
+      "domainKey": "MKT",
+      "datatableName": "MktSocialPost",
+      "dataTableName": "MktSocialPost",
+      "sqlTableName": "mkt_social_post",
+      "isolationScope": "ENTERPRISE_SHARED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Social Media Post, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "campaignId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "socialProfileConnectionId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "body",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "network",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "mediaRefs",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "linkUrl",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "altText",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "locale",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "scheduledAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "timezone",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "publishedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "externalPostId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "versions",
+          "type": "hasMany",
+          "sourceModel": "MktSocialPost",
+          "sourceField": "id",
+          "targetModel": "MktSocialPostVersion",
+          "targetField": "socialPostId",
+          "throughModel": null,
+          "description": "MktSocialPost relation to MktSocialPostVersion."
+        }
+      ]
+    },
+    {
+      "name": "EduCredentialIssuer",
+      "title": "Credential Issuer",
+      "description": "Private signing keys reside strictly in platform KMS (`kmsSigningKeyAlias`); public key JWK remains permanently resolvable so historical assertions stay verifiable even if rotated.",
+      "domainName": "Rapider Education Suite",
+      "domainKey": "EDU",
+      "datatableName": "EduCredentialIssuer",
+      "dataTableName": "EduCredentialIssuer",
+      "sqlTableName": "edu_credential_issuer",
+      "isolationScope": "FERPA_STUDENT_ISOLATED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Credential Issuer, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "didWebIdentifier",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "did",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "kmsSigningKeyAlias",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "signatoryName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "signatoryTitle",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "verificationDeskPhoneE164",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "supportEmail",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "statusListUri",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "department",
+          "type": "belongsTo",
+          "sourceModel": "EduCredentialIssuer",
+          "sourceField": "departmentId",
+          "targetModel": "HrDepartment",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "EduCredentialIssuer department foreign key link to HrDepartment."
+        }
+      ]
+    },
+    {
+      "name": "EduCredentialArtwork",
+      "title": "Credential Artwork",
+      "description": "Extends canonical `LrnCredential` 1-to-1 per issuer branding; `ACADEMIC_DIPLOMA` and `PROFESSIONAL_LICENSE` enforce `requiresDualControlSignOff = true`.",
+      "domainName": "Rapider Education Suite",
+      "domainKey": "EDU",
+      "datatableName": "EduCredentialArtwork",
+      "dataTableName": "EduCredentialArtwork",
+      "sqlTableName": "edu_credential_artwork",
+      "isolationScope": "FERPA_STUDENT_ISOLATED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Credential Artwork, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "credentialCategory",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "pdfLayoutJson",
+          "type": "object",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "svgBadgeTemplate",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "aceRecommendedCredits",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "validityMonths",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "requiredRenewalCeus",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "requiresDualControlSignOff",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "duplicatePrintFeeAmount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "currency",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "lrnCredential",
+          "type": "belongsTo",
+          "sourceModel": "EduCredentialArtwork",
+          "sourceField": "lrnCredentialId",
+          "targetModel": "LrnCredential",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "EduCredentialArtwork lrnCredential foreign key link to LrnCredential."
+        }
+      ]
+    },
+    {
+      "name": "EduIssuanceBatch",
+      "title": "Issuance Batch",
+      "description": "Batches with `requiresDualControlSignOff = true` cannot transition to `SIGNING_IN_PROGRESS` without an approved Home `WorkItem` from a distinct user than the batch creator.",
+      "domainName": "Rapider Education Suite",
+      "domainKey": "EDU",
+      "datatableName": "EduIssuanceBatch",
+      "dataTableName": "EduIssuanceBatch",
+      "sqlTableName": "edu_issuance_batch",
+      "isolationScope": "FERPA_STUDENT_ISOLATED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Issuance Batch, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "batchCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "sourceTrigger",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "candidateCount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "bouncedEmailCount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "issuedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "artwork",
+          "type": "belongsTo",
+          "sourceModel": "EduIssuanceBatch",
+          "sourceField": "artworkId",
+          "targetModel": "EduCredentialArtwork",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "EduIssuanceBatch artwork foreign key link to EduCredentialArtwork."
+        }
+      ]
+    },
+    {
+      "name": "EduVerifiableAssertion",
+      "title": "Verifiable Assertion",
+      "description": "Signed `w3cVcJsonLd` payload is strictly immutable after issuance; revoking flips the `StatusList2021` bit at `statusListIndex` and sets `assertionStatus = REVOKED`; legal name changes issue a new assertion pointing back via `supersededByAssertionId`.",
+      "domainName": "Rapider Education Suite",
+      "domainKey": "EDU",
+      "datatableName": "EduVerifiableAssertion",
+      "dataTableName": "EduVerifiableAssertion",
+      "sqlTableName": "edu_verifiable_assertion",
+      "isolationScope": "FERPA_STUDENT_ISOLATED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Verifiable Assertion, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "publicSerialCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isExternalImported",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "externalIssuerDid",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "recipientFullName",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "recipientInstitutionalEmail",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "recipientPersonalEmail",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "issuedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "expiresAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "w3cVcJsonLd",
+          "type": "object",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "pdfDriveFileId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "bakedBadgeDriveFileId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "statusListIndex",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "assertionStatus",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "revocationReasonCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "walletVisibility",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "claimedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "batch",
+          "type": "belongsTo",
+          "sourceModel": "EduVerifiableAssertion",
+          "sourceField": "batchId",
+          "targetModel": "EduIssuanceBatch",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "EduVerifiableAssertion batch foreign key link to EduIssuanceBatch."
+        }
+      ]
+    },
+    {
+      "name": "EduCredentialPathway",
+      "title": "Credential Pathway",
+      "description": "Graph must be a Directed Acyclic Graph (DAG) — circular pathway dependencies are deterministically rejected on save.",
+      "domainName": "Rapider Education Suite",
+      "domainKey": "EDU",
+      "datatableName": "EduCredentialPathway",
+      "dataTableName": "EduCredentialPathway",
+      "sqlTableName": "edu_credential_pathway",
+      "isolationScope": "FERPA_STUDENT_ISOLATED",
+      "titleFieldTemplate": "{{ name }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "name",
+          "description"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Credential Pathway, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "name",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "requiredArtworkIds",
+          "type": "array",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": true
+        },
+        {
+          "name": "electiveArtworkIds",
+          "type": "array",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": true
+        },
+        {
+          "name": "minElectiveCount",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "capstoneArtworkId",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "autoIssueCapstone",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "capstoneLrnCredential",
+          "type": "belongsTo",
+          "sourceModel": "EduCredentialPathway",
+          "sourceField": "capstoneLrnCredentialId",
+          "targetModel": "LrnCredential",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "EduCredentialPathway capstoneLrnCredential foreign key link to LrnCredential."
+        }
+      ]
+    },
+    {
+      "name": "EduRenewalSubmission",
+      "title": "Renewal Submission",
+      "description": "Transitioning to `RENEWED` requires `verifiedCeuCredits >= artwork.requiredRenewalCeus` and mints/extends the renewed assertion window cleanly.",
+      "domainName": "Rapider Education Suite",
+      "domainKey": "EDU",
+      "datatableName": "EduRenewalSubmission",
+      "dataTableName": "EduRenewalSubmission",
+      "sqlTableName": "edu_renewal_submission",
+      "isolationScope": "FERPA_STUDENT_ISOLATED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Renewal Submission, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "claimedCeuCredits",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "verifiedCeuCredits",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "evidenceDriveFileIds",
+          "type": "array",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": true
+        },
+        {
+          "name": "activitySummary",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "stage",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "auditedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "version",
+          "type": "number",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "assertion",
+          "type": "belongsTo",
+          "sourceModel": "EduRenewalSubmission",
+          "sourceField": "assertionId",
+          "targetModel": "EduVerifiableAssertion",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "EduRenewalSubmission assertion foreign key link to EduVerifiableAssertion."
+        }
+      ]
+    },
+    {
+      "name": "EduVerificationLog",
+      "title": "Verification Log",
+      "description": "Append-only audit telemetry; stores zero PII about anonymous employer verifiers (country-level geo only for GDPR compliance).",
+      "domainName": "Rapider Education Suite",
+      "domainKey": "EDU",
+      "datatableName": "EduVerificationLog",
+      "dataTableName": "EduVerificationLog",
+      "sqlTableName": "edu_verification_log",
+      "isolationScope": "FERPA_STUDENT_ISOLATED",
+      "titleFieldTemplate": "{{ id }}",
+      "scope": {
+        "where": {}
+      },
+      "aiAgentConfig": {
+        "vectorSearchFields": [
+          "id"
+        ],
+        "planning": {
+          "availableOperations": [
+            "create",
+            "update",
+            "read",
+            "delete"
+          ]
+        },
+        "entityItemCreate": {
+          "requiredFields": [
+            "id"
+          ],
+          "immutableFields": [
+            "isDeleted"
+          ],
+          "requiredRelations": [],
+          "autoGenerateFields": [
+            "id"
+          ],
+          "additionalPrompt": "When creating Verification Log, ensure required attributes are populated.",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": ""
+        },
+        "entityItemUpdate": {
+          "immutableFields": [
+            "id"
+          ],
+          "autoGenerateFields": [],
+          "additionalPrompt": "",
+          "requireUserConfirmation": false,
+          "customValidationPrompt": "",
+          "restrictedStates": []
+        },
+        "entityRead": {
+          "defaultPageSize": 20,
+          "defaultContextLimit": 30,
+          "hiddenFields": [
+            "isDeleted"
+          ],
+          "maskedFields": [],
+          "additionalPrompt": ""
+        },
+        "entityItemDelete": {
+          "requireCaptchaConfirmation": true,
+          "cascadingRelations": [],
+          "restrictedStates": []
+        }
+      },
+      "fields": [
+        {
+          "name": "id",
+          "type": "string",
+          "description": "Primary key UUID.",
+          "isPrimaryKey": true,
+          "isRequired": true,
+          "isHidden": false,
+          "isArray": false,
+          "defaultFn": "uuidv4"
+        },
+        {
+          "name": "checkedSerialCode",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "verificationOutcome",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "verifierRegionCountry",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "referralSource",
+          "type": "string",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "clickedProgramCta",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "anomalyFlagged",
+          "type": "boolean",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        },
+        {
+          "name": "verifiedAt",
+          "type": "date",
+          "description": "",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "status",
+          "type": "string",
+          "description": "Lifecycle or record status.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false
+        },
+        {
+          "name": "isDeleted",
+          "type": "boolean",
+          "description": "Soft deletion flag.",
+          "isRequired": false,
+          "isHidden": false,
+          "isArray": false,
+          "default": false
+        }
+      ],
+      "relations": [
+        {
+          "name": "assertion",
+          "type": "belongsTo",
+          "sourceModel": "EduVerificationLog",
+          "sourceField": "assertionId",
+          "targetModel": "EduVerifiableAssertion",
+          "targetField": "id",
+          "throughModel": null,
+          "description": "EduVerificationLog assertion foreign key link to EduVerifiableAssertion."
+        }
+      ]
+    }
+  ],
+  "webPages": [
+    {
+      "name": "Credential & Impact Pulse",
+      "route": "credentials-pulse",
+      "htmlFilePath": "pages/credentials-pulse/credentials-pulse.html",
+      "title": "Credential & Impact Pulse",
+      "group": "Issuance & Studio",
+      "icon": "fas fa-school",
+      "displayInMenu": true,
+      "order": 1,
+      "developmentDetails": "KPI cards (countSWR): Total Active Assertions, Claim Rate %, LinkedIn Shares, Public Verifications (30d), Expiring Licenses (90d), Attributed Program Clicks."
+    },
+    {
+      "name": "Certificate & Badge Studio",
+      "route": "artwork-templates",
+      "htmlFilePath": "pages/artwork-templates/artwork-templates.html",
+      "title": "Certificate & Badge Studio",
+      "group": "Issuance & Studio",
+      "icon": "fas fa-school",
+      "displayInMenu": true,
+      "order": 2,
+      "developmentDetails": "EduCredentialArtwork catalog (findSWR) linked to LrnCredential, #activeFilterTagsBar (Issuer, Format, ACE Credits), clickable Template Name -> artwork-template-detail, icon+text Edit, icon-only Delete."
+    },
+    {
+      "name": "Issuance Batches & Ledger",
+      "route": "issuance-batches",
+      "htmlFilePath": "pages/issuance-batches/issuance-batches.html",
+      "title": "Issuance Batches & Ledger",
+      "group": "Issuance & Studio",
+      "icon": "fas fa-school",
+      "displayInMenu": true,
+      "order": 3,
+      "developmentDetails": "EduIssuanceBatch & EduVerifiableAssertion explorer with #activeFilterTagsBar (Status, Source #161/#164/LRN, Bounce Flag), clickable Assertion Serial -> assertion-verify-detail."
+    },
+    {
+      "name": "Stackable Pathways & CLR",
+      "route": "stackable-pathways",
+      "htmlFilePath": "pages/stackable-pathways/stackable-pathways.html",
+      "title": "Stackable Pathways & CLR",
+      "group": "Pathways & Wallet",
+      "icon": "fas fa-school",
+      "displayInMenu": true,
+      "order": 4,
+      "developmentDetails": "Configure EduCredentialPathway prerequisite milestone rules and 1EdTech CLR v2.0 achievement bundle definitions."
+    },
+    {
+      "name": "CEU & Recertification Board",
+      "route": "ceu-renewals",
+      "htmlFilePath": "pages/ceu-renewals/ceu-renewals.html",
+      "title": "CEU & Recertification Board",
+      "group": "Pathways & Wallet",
+      "icon": "fas fa-school",
+      "displayInMenu": true,
+      "order": 5,
+      "developmentDetails": "<rapider-kanban> board of EduRenewalSubmission cards (SUBMITTED -> UNDER_AUDIT -> NEEDS_EVIDENCE -> RENEWED) + list toggle, AI CEU Pre-Auditor badge (CRD-020)."
+    },
+    {
+      "name": "Lifelong Credential Wallet",
+      "route": "learner-wallet",
+      "htmlFilePath": "pages/learner-wallet/learner-wallet.html",
+      "title": "Lifelong Credential Wallet",
+      "group": "Pathways & Wallet",
+      "icon": "fas fa-school",
+      "displayInMenu": true,
+      "order": 6,
+      "developmentDetails": "Earner view of owned & imported external OB 3.0 / W3C VC credentials with PDF/SVG/JSON-LD download, visibility selector, 1-click LinkedIn add, and Import External VC action."
+    },
+    {
+      "name": "Public Verification & Spotlight",
+      "route": "public-verifier",
+      "htmlFilePath": "pages/public-verifier/public-verifier.html",
+      "title": "Public Verification & Spotlight",
+      "group": "Verification & Governance",
+      "icon": "fas fa-school",
+      "displayInMenu": true,
+      "order": 7,
+      "developmentDetails": "Live 5-step cryptographic inspector (URL/Serial/JSON-LD dropzone) + opt-in Spotlight Certified Directory respecting ferpaDirectoryOptOut."
+    },
+    {
+      "name": "Issuer Profiles & did:web",
+      "route": "issuer-authorities",
+      "htmlFilePath": "pages/issuer-authorities/issuer-authorities.html",
+      "title": "Issuer Profiles & did:web",
+      "group": "Verification & Governance",
+      "icon": "fas fa-school",
+      "displayInMenu": true,
+      "order": 8,
+      "developmentDetails": "Manage EduCredentialIssuer authorities, did:web status, co-signer titles, <rapider-phone-input> registrar verification desk contacts, and StatusList2021 health."
+    },
+    {
+      "name": "Verification & Viral ROI",
+      "route": "verification-analytics",
+      "htmlFilePath": "pages/verification-analytics/verification-analytics.html",
+      "title": "Verification & Viral ROI",
+      "group": "Verification & Governance",
+      "icon": "fas fa-school",
+      "displayInMenu": true,
+      "order": 9,
+      "developmentDetails": "EduVerificationLog audit ledger, employer lookup geographies, MktCampaign referral funnel metrics, and anomaly alerts (CRD-022)."
+    },
+    {
+      "name": "Assertion & Cryptographic Proof",
+      "route": "assertion-verify-detail",
+      "htmlFilePath": "pages/assertion-verify-detail/assertion-verify-detail.html",
+      "title": "Assertion & Cryptographic Proof",
+      "group": "(Hidden)",
+      "icon": "fas fa-school",
+      "displayInMenu": false,
+      "order": 10,
+      "developmentDetails": "Detailed EduVerifiableAssertion view (#/assertion-verify-detail?id=...) showing rendered diploma/badge, W3C VC JSON-LD proof, LrnSkillDefinition pills, Revoke / Re-issue Name Change controls, and Back to list."
+    },
+    {
+      "name": "Studio Template & Merge Preview",
+      "route": "artwork-template-detail",
+      "htmlFilePath": "pages/artwork-template-detail/artwork-template-detail.html",
+      "title": "Studio Template & Merge Preview",
+      "group": "(Hidden)",
+      "icon": "fas fa-school",
+      "displayInMenu": false,
+      "order": 11,
+      "developmentDetails": "Detailed EduCredentialArtwork preview (#/artwork-template-detail?id=...) with PDF + SVG badge tabs, QR placement, AI Skill Mapper (CRD-019), and issued count."
+    },
+    {
+      "name": "Stage Cohort / Single Issuance",
+      "route": "batch-issue-drawer",
+      "htmlFilePath": "pages/batch-issue-drawer/batch-issue-drawer.html",
+      "title": "Stage Cohort / Single Issuance",
+      "group": "(Hidden)",
+      "icon": "fas fa-school",
+      "displayInMenu": false,
+      "order": 12,
+      "developmentDetails": "Sliding drawer to stage EduIssuanceBatch or single assertion, run pre-flight validation, submit Registrar WorkItem sign-off, finally button reset, and closePageDrawer()."
+    },
+    {
+      "name": "Issuer / CEU Renewal Drawer",
+      "route": "issuer-renewal-drawer",
+      "htmlFilePath": "pages/issuer-renewal-drawer/issuer-renewal-drawer.html",
+      "title": "Issuer / CEU Renewal Drawer",
+      "group": "(Hidden)",
+      "icon": "fas fa-school",
+      "displayInMenu": false,
+      "order": 13,
+      "developmentDetails": "Sliding drawer to configure EduCredentialIssuer (<rapider-phone-input>) or submit/audit EduRenewalSubmission (Decimal128 CEUs) with closePageDrawer()."
+    }
+  ],
+  "workflows": [],
+  "variables": [],
+  "tools": [],
+  "pages": [
+    {
+      "name": "Credential & Impact Pulse",
+      "route": "credentials-pulse",
+      "htmlFilePath": "pages/credentials-pulse/credentials-pulse.html",
+      "title": "Credential & Impact Pulse",
+      "group": "Issuance & Studio",
+      "icon": "fas fa-school",
+      "displayInMenu": true,
+      "order": 1,
+      "developmentDetails": "KPI cards (countSWR): Total Active Assertions, Claim Rate %, LinkedIn Shares, Public Verifications (30d), Expiring Licenses (90d), Attributed Program Clicks."
+    },
+    {
+      "name": "Certificate & Badge Studio",
+      "route": "artwork-templates",
+      "htmlFilePath": "pages/artwork-templates/artwork-templates.html",
+      "title": "Certificate & Badge Studio",
+      "group": "Issuance & Studio",
+      "icon": "fas fa-school",
+      "displayInMenu": true,
+      "order": 2,
+      "developmentDetails": "EduCredentialArtwork catalog (findSWR) linked to LrnCredential, #activeFilterTagsBar (Issuer, Format, ACE Credits), clickable Template Name -> artwork-template-detail, icon+text Edit, icon-only Delete."
+    },
+    {
+      "name": "Issuance Batches & Ledger",
+      "route": "issuance-batches",
+      "htmlFilePath": "pages/issuance-batches/issuance-batches.html",
+      "title": "Issuance Batches & Ledger",
+      "group": "Issuance & Studio",
+      "icon": "fas fa-school",
+      "displayInMenu": true,
+      "order": 3,
+      "developmentDetails": "EduIssuanceBatch & EduVerifiableAssertion explorer with #activeFilterTagsBar (Status, Source #161/#164/LRN, Bounce Flag), clickable Assertion Serial -> assertion-verify-detail."
+    },
+    {
+      "name": "Stackable Pathways & CLR",
+      "route": "stackable-pathways",
+      "htmlFilePath": "pages/stackable-pathways/stackable-pathways.html",
+      "title": "Stackable Pathways & CLR",
+      "group": "Pathways & Wallet",
+      "icon": "fas fa-school",
+      "displayInMenu": true,
+      "order": 4,
+      "developmentDetails": "Configure EduCredentialPathway prerequisite milestone rules and 1EdTech CLR v2.0 achievement bundle definitions."
+    },
+    {
+      "name": "CEU & Recertification Board",
+      "route": "ceu-renewals",
+      "htmlFilePath": "pages/ceu-renewals/ceu-renewals.html",
+      "title": "CEU & Recertification Board",
+      "group": "Pathways & Wallet",
+      "icon": "fas fa-school",
+      "displayInMenu": true,
+      "order": 5,
+      "developmentDetails": "<rapider-kanban> board of EduRenewalSubmission cards (SUBMITTED -> UNDER_AUDIT -> NEEDS_EVIDENCE -> RENEWED) + list toggle, AI CEU Pre-Auditor badge (CRD-020)."
+    },
+    {
+      "name": "Lifelong Credential Wallet",
+      "route": "learner-wallet",
+      "htmlFilePath": "pages/learner-wallet/learner-wallet.html",
+      "title": "Lifelong Credential Wallet",
+      "group": "Pathways & Wallet",
+      "icon": "fas fa-school",
+      "displayInMenu": true,
+      "order": 6,
+      "developmentDetails": "Earner view of owned & imported external OB 3.0 / W3C VC credentials with PDF/SVG/JSON-LD download, visibility selector, 1-click LinkedIn add, and Import External VC action."
+    },
+    {
+      "name": "Public Verification & Spotlight",
+      "route": "public-verifier",
+      "htmlFilePath": "pages/public-verifier/public-verifier.html",
+      "title": "Public Verification & Spotlight",
+      "group": "Verification & Governance",
+      "icon": "fas fa-school",
+      "displayInMenu": true,
+      "order": 7,
+      "developmentDetails": "Live 5-step cryptographic inspector (URL/Serial/JSON-LD dropzone) + opt-in Spotlight Certified Directory respecting ferpaDirectoryOptOut."
+    },
+    {
+      "name": "Issuer Profiles & did:web",
+      "route": "issuer-authorities",
+      "htmlFilePath": "pages/issuer-authorities/issuer-authorities.html",
+      "title": "Issuer Profiles & did:web",
+      "group": "Verification & Governance",
+      "icon": "fas fa-school",
+      "displayInMenu": true,
+      "order": 8,
+      "developmentDetails": "Manage EduCredentialIssuer authorities, did:web status, co-signer titles, <rapider-phone-input> registrar verification desk contacts, and StatusList2021 health."
+    },
+    {
+      "name": "Verification & Viral ROI",
+      "route": "verification-analytics",
+      "htmlFilePath": "pages/verification-analytics/verification-analytics.html",
+      "title": "Verification & Viral ROI",
+      "group": "Verification & Governance",
+      "icon": "fas fa-school",
+      "displayInMenu": true,
+      "order": 9,
+      "developmentDetails": "EduVerificationLog audit ledger, employer lookup geographies, MktCampaign referral funnel metrics, and anomaly alerts (CRD-022)."
+    },
+    {
+      "name": "Assertion & Cryptographic Proof",
+      "route": "assertion-verify-detail",
+      "htmlFilePath": "pages/assertion-verify-detail/assertion-verify-detail.html",
+      "title": "Assertion & Cryptographic Proof",
+      "group": "(Hidden)",
+      "icon": "fas fa-school",
+      "displayInMenu": false,
+      "order": 10,
+      "developmentDetails": "Detailed EduVerifiableAssertion view (#/assertion-verify-detail?id=...) showing rendered diploma/badge, W3C VC JSON-LD proof, LrnSkillDefinition pills, Revoke / Re-issue Name Change controls, and Back to list."
+    },
+    {
+      "name": "Studio Template & Merge Preview",
+      "route": "artwork-template-detail",
+      "htmlFilePath": "pages/artwork-template-detail/artwork-template-detail.html",
+      "title": "Studio Template & Merge Preview",
+      "group": "(Hidden)",
+      "icon": "fas fa-school",
+      "displayInMenu": false,
+      "order": 11,
+      "developmentDetails": "Detailed EduCredentialArtwork preview (#/artwork-template-detail?id=...) with PDF + SVG badge tabs, QR placement, AI Skill Mapper (CRD-019), and issued count."
+    },
+    {
+      "name": "Stage Cohort / Single Issuance",
+      "route": "batch-issue-drawer",
+      "htmlFilePath": "pages/batch-issue-drawer/batch-issue-drawer.html",
+      "title": "Stage Cohort / Single Issuance",
+      "group": "(Hidden)",
+      "icon": "fas fa-school",
+      "displayInMenu": false,
+      "order": 12,
+      "developmentDetails": "Sliding drawer to stage EduIssuanceBatch or single assertion, run pre-flight validation, submit Registrar WorkItem sign-off, finally button reset, and closePageDrawer()."
+    },
+    {
+      "name": "Issuer / CEU Renewal Drawer",
+      "route": "issuer-renewal-drawer",
+      "htmlFilePath": "pages/issuer-renewal-drawer/issuer-renewal-drawer.html",
+      "title": "Issuer / CEU Renewal Drawer",
+      "group": "(Hidden)",
+      "icon": "fas fa-school",
+      "displayInMenu": false,
+      "order": 13,
+      "developmentDetails": "Sliding drawer to configure EduCredentialIssuer (<rapider-phone-input>) or submit/audit EduRenewalSubmission (Decimal128 CEUs) with closePageDrawer()."
+    }
+  ]
+}
